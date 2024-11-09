@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dadada;
+}
+
+.sidebar-custom{
+  height: 100vh;
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .sidebar-custom{
+      height: auto;
+  }
+}
+
+.logo-sidebar {
+  height: 30%;
+}
+
+.lista-sem-pontos {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-custom {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.link-custom:hover {
+  color: #0d6efd;
+  transform: scale(1.7);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.ativado {
+  color: #0d6efd;
+}
+
+.espaco {
+  margin-left: 350px;
+}
+
+.altura {
+  height: 100vh;
+  width: calc(100vw - 350px);
+}
+
+.card-custom {
+  width: 480px;
+  height: 89vh;
+  padding: 10px;
+}
+
+.cor-azul {
+  color: #30343f;
+}
+
+.titulo {
+  width: 150px;
+  color: #0d6efd;
+}
+
+.btn-final {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.btn-limpar {
+  width: 200px;
+  background-color: #dadada;
+  color: black;
+
+  
+}
+.btn-limpar:hover{
+    color: red;
+    border: 1px solid red;
+}
+.btn-limpar:active{
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid red !important;
+}
+.btn-criar {
+  width: 200px;
+  background-color: #dadada;
+  color: black;
+}
+.btn-criar:hover{
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+}
+.btn-criar:active{
+    color: white !important;
+    background-color: #0d6efd !important;
+    border: 1px solid #0d6efd !important;
+}
