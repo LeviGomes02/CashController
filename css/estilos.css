@@ -12,11 +12,6 @@
 .logo{
     height: 50%;
 }
-@media(max-width: 768px){
-    .logo{
-        height: 200px;
-    }
-}
 
 .input-custom{
     background-color: var(--cinza-claro);
@@ -39,5 +34,10 @@
     font-weight: bold;
 }
 
+@media(max-width: 768px){
+    .logo{
+        height: 200px;
+    }
+}
 
 
