@@ -109,7 +109,7 @@
                     </div>
 
                     <form>
-                        
+
                         <div>
                             <div class="d-flex flex-column gap-4 mt-4">
                                 <form>
@@ -127,130 +127,37 @@
                                         <input type="date" class="form-control input-custom" id="data">
                                     </div>
                                 </form>
-                                <div class="d-flex flex-column mt-2 mb-4">
-                                    <h6>Descrição:</h6>
-                                    <div class="btn-group">
-                                        <button type="submit" class="btn btn-secondary btn-selecionar1">Selecione</button>
-                                        <button id="dropdownButton" type="submit"
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-selecionar2"
-                                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
-                                            <span class="visually-hidden">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item " href="#">Tesouro Direto</a></li>
-                                            <li><a class="dropdown-item " href="#">CDB</a></li>
-                                            <li><a class="dropdown-item " href="#">LCI</a></li>
-                                            <li><a class="dropdown-item " href="#">Fundos Imobiliários</a></li>
-                                            <li><a class="dropdown-item " href="#">ETFs</a></li>
-                                            <li><a class="dropdown-item " href="#">Criptomoedas</a></li>
-                                            <li><a class="dropdown-item " href="#">Ações</a></li>
-                                        </ul>
-                                        <div class="ms-2">
-                                            <button type="submit"
-                                                class="btn btn-outline-primary btn-adicionar rounded d-flex align-items-center justify-content-center"
-                                                data-bs-toggle="modal" data-bs-target="#modalDescricao">
-                                                <i class="bi bi-plus-lg fs-5"></i>
-                                            </button>
-                                            <div class="modal fade" id="modalDescricao" tabindex="-1"
-                                                aria-labelledby="modalDescricaoLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="modalDescricaoLabel">Escolha uma ação
-                                                            </h5>
-                                                            <button type="submit" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Fechar"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Selecione a ação que deseja realizar.
-                                                        </div>
-                                                        <div class="modal-footer d-flex justify-content-center">
-                                                            <button type="submit" class="btn btn-danger" data-bs-toggle="modal"
-                                                                data-bs-target="#inputExcluirDescricao">Excluir</button>
-                                                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
-                                                                data-bs-target="#modalEditarDescricao">Adicionar</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade" id="inputExcluirDescricao" tabindex="-1"
-                                        aria-labelledby="excluindoDescricaoLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="excluindoDescricaoLabel">Excluindo
-                                                        Investimento:
-                                                    </h1>
-                                                    <button type="submit" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="mt-2">
-                                                        <label for="inputExcluirDescricao" class="form-label">
-                                                            <h6>Informe a Investimento que deseja excluir:</h6>
-                                                        </label>
-                                                        <form>
-                                                            <input type="text" class="form-control input-custom"
-                                                                id="inputExcluirDescricao" placeholder="Aluguel">
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Cancelar</button>
-                                                    <button type="submit" class="btn btn-danger">Excluir</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade" id="modalEditarDescricao" tabindex="-1"
-                                        aria-labelledby="editarDescricaoLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="editarDescricaoLabel">Adicionando
-                                                        Descrição:
-                                                    </h1>
-                                                    <button type="submit" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="mt-2">
-                                                        <label for="inputEditarDescricao" class="form-label">
-                                                            <h6>Informe a Descrição que deseja incluir:</h6>
-                                                        </label>
-                                                        <form>
-                                                            <input type="text" class="form-control input-custom"
-                                                                id="inputEditarDescricao" placeholder="Criptomoedas">
-                                                        </form>
-        
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Cancelar</button>
-                                                    <button type="submit" class="btn btn-primary">Adicionar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column mt-1 mb-4">
-                                    <h6>Conta Bancária:</h6>
+                                <div class="d-flex flex-column mt-2 ">
+                                    <h6>Tipo:</h6>
                                     <div class="btn-group">
                                         <button type="submit"
                                             class="btn btn-secondary btn-selecionar1">Selecione</button>
-                                        <button id="dropdownButton" type="submit"
+                                        <button id="tipo" type="submit"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-selecionar2"
                                             data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
                                             <span class="visually-hidden">Toggle Dropdown</span>
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item " href="#">Nubanck</a></li>
-                                            <li><a class="dropdown-item " href="#">Itau</a></li>
-                                            <li><a class="dropdown-item " href="#">Bradesco</a></li>
+                                            <li><a class="dropdown-item " href="#">Compra</a></li>
+                                            <li><a class="dropdown-item " href="#">Venda</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column mt-1 mb-4">
+                                    <h6>Ativo:</h6>
+                                    <div class="btn-group">
+                                        <button type="submit"
+                                            class="btn btn-secondary btn-selecionar1">Selecione</button>
+                                        <button id="ativo1" type="submit"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-selecionar2"
+                                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item " href="#">AlfaTech</a></li>
+                                            <li><a class="dropdown-item " href="#">BlueWave Corp</a></li>
+                                            <li><a class="dropdown-item " href="#">GreenField Holdings</a></li>
+                                            <li><a class="dropdown-item " href="#">PowerGrowth</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -271,6 +178,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Nome</th>
+                                    <th scope="col">Tipo</th>
                                     <th scope="col">Data</th>
                                     <th scope="col">Conta B.</th>
                                     <th scope="col">Valor</th>
@@ -310,15 +218,8 @@
                                         <button type="submit" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body p-5">
                                         <form>
-                                            <div class="mt-4">
-                                                <label for="nome" class="form-label">
-                                                    <h6>Descrição:</h6>
-                                                </label>
-                                                <input type="text" class="form-control input-custom" id="nome"
-                                                    placeholder="Aluguel">
-                                            </div>
                                             <div>
                                                 <div class="d-flex flex-column gap-4 mt-4">
                                                     <div class="mt-2">
@@ -334,21 +235,42 @@
                                                         </label>
                                                         <input type="date" class="form-control input-custom" id="data">
                                                     </div>
-                                                    <div class="d-flex flex-column mt-2 mb-4">
-                                                        <h6>Conta Bancária:</h6>
+                                                    <div class="d-flex flex-column mt-2 ">
+                                                        <h6>Tipo:</h6>
                                                         <div class="btn-group">
                                                             <button type="submit"
                                                                 class="btn btn-secondary btn-selecionar1">Selecione</button>
-                                                            <button id="dropdownButton" type="submit"
+                                                            <button id="tipo" type="submit"
                                                                 class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-selecionar2"
                                                                 data-bs-toggle="dropdown" aria-expanded="false"
                                                                 data-bs-reference="parent">
                                                                 <span class="visually-hidden">Toggle Dropdown</span>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="#">Nubanck</a></li>
-                                                                <li><a class="dropdown-item " href="#">Itau</a></li>
-                                                                <li><a class="dropdown-item " href="#">Bradesco</a></li>
+                                                                <li><a class="dropdown-item " href="#">Compra</a></li>
+                                                                <li><a class="dropdown-item " href="#">Venda</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-column mt-1 mb-4">
+                                                        <h6>Ativo:</h6>
+                                                        <div class="btn-group">
+                                                            <button type="submit"
+                                                                class="btn btn-secondary btn-selecionar1">Selecione</button>
+                                                            <button id="ativo2" type="submit"
+                                                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-selecionar2"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"
+                                                                data-bs-reference="parent">
+                                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item " href="#">AlfaTech</a></li>
+                                                                <li><a class="dropdown-item " href="#">BlueWave Corp</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item " href="#">GreenField
+                                                                        Holdings</a></li>
+                                                                <li><a class="dropdown-item " href="#">PowerGrowth</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>
