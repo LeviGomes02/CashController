@@ -117,7 +117,7 @@
                                     <li><a class="dropdown-item " href="#">Internet</a></li>
                                     <li><a class="dropdown-item " href="#">Luz</a></li>
                                     <li><a class="dropdown-item " href="#">Mercado</a></li>
-                                    <li><a class="dropdown-item " href="#">Ntatação</a></li>
+                                    <li><a class="dropdown-item " href="#">Natação</a></li>
                                 </ul>
                                 <div class="ms-2">
                                     <button
@@ -126,11 +126,12 @@
                                         <i class="bi bi-plus-lg fs-5"></i>
                                     </button>
                                     <div class="modal fade" id="modalDescricao" tabindex="-1"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        aria-labelledby="modalDescricaoLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Escolha uma ação</h5>
+                                                    <h5 class="modal-title" id="modalDescricaoLabel">Escolha uma ação
+                                                    </h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Fechar"></button>
                                                 </div>
@@ -139,7 +140,7 @@
                                                 </div>
                                                 <div class="modal-footer d-flex justify-content-center">
                                                     <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                                        data-bs-target="#excluirDescricao">Excluir</button>
+                                                        data-bs-target="#inputExcluirDescricao">Excluir</button>
                                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                                         data-bs-target="#modalEditarDescricao">Editar</button>
                                                 </div>
@@ -148,23 +149,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="excluirDescricao" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="inputExcluirDescricao" tabindex="-1"
+                                aria-labelledby="excluindoDescricaoLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Excluindo Descrição:
+                                            <h1 class="modal-title fs-5" id="excluindoDescricaoLabel">Excluindo
+                                                Descrição:
                                             </h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="mt-2">
-                                                <label for="excluirDescricao" class="form-label">
+                                                <label for="inputExcluirDescricao" class="form-label">
                                                     <h6>Informe a Descrição que deseja excluir:</h6>
                                                 </label>
-                                                <input type="text" class="form-control input-custom"
-                                                    id="excluirDescricao" placeholder="Aluguel">
+                                                <form>
+                                                    <input type="text" class="form-control input-custom"
+                                                        id="inputExcluirDescricao" placeholder="Aluguel">
+                                                </form>
+
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -176,22 +181,26 @@
                                 </div>
                             </div>
                             <div class="modal fade" id="modalEditarDescricao" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                aria-labelledby="editarDescricaoLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionando Descrição:
+                                            <h1 class="modal-title fs-5" id="editarDescricaoLabel">Adicionando
+                                                Descrição:
                                             </h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="mt-2">
-                                                <label for="excluirDescricao" class="form-label">
+                                                <label for="inputEditarDescricao" class="form-label">
                                                     <h6>Informe a Descrição que deseja incluir:</h6>
                                                 </label>
-                                                <input type="text" class="form-control input-custom"
-                                                    id="excluirDescricao" placeholder="Aluguel">
+                                                <form>
+                                                    <input type="text" class="form-control input-custom"
+                                                        id="inputEditarDescricao" placeholder="Aluguel">
+                                                </form>
+
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -205,19 +214,21 @@
                         </div>
                         <div>
                             <div class="d-flex flex-column gap-4 mt-4">
-                                <div class="mt-2">
-                                    <label for="valor" class="form-label">
-                                        <h6>Valor:</h6>
-                                    </label>
-                                    <input type="text" class="form-control input-custom" id="valor"
-                                        placeholder="R$ 1.000,00">
-                                </div>
-                                <div class="mt-2 ">
-                                    <label for="data" class="form-label">
-                                        <h6>Data:</h6>
-                                    </label>
-                                    <input type="date" class="form-control input-custom" id="data">
-                                </div>
+                                <form>
+                                    <div class="mt-2">
+                                        <label for="valor" class="form-label">
+                                            <h6>Valor:</h6>
+                                        </label>
+                                        <input type="text" class="form-control input-custom" id="valor"
+                                            placeholder="R$ 1.000,00">
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <label for="data" class="form-label">
+                                            <h6>Data:</h6>
+                                        </label>
+                                        <input type="date" class="form-control input-custom" id="data">
+                                    </div>
+                                </form>
                                 <div class="d-flex flex-column mt-2 mb-4">
                                     <h6>Conta Bancária:</h6>
                                     <div class="btn-group">
@@ -240,11 +251,11 @@
                                                 <i class="bi bi-plus-lg fs-5"></i>
                                             </button>
                                             <div class="modal fade" id="modalContaBacaria" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                aria-labelledby="contaBancariaLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                            <h1 class="modal-title fs-5" id="contaBancariaLabel">
                                                                 Adicionando Conta Bancária:</h1>
                                                             <button type="button" class="btn-close"
                                                                 data-bs-dismiss="modal" aria-label="Close"></button>
@@ -343,7 +354,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form class="container">
+                                        <form>
                                             <div class="mt-4">
                                                 <label for="nome" class="form-label">
                                                     <h6>Descrição:</h6>
