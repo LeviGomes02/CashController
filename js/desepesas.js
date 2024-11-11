@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <td>${despesa.data}</td>
             <td>${despesa.contaBancaria}</td>
             <td class="text-danger">${despesa.valor}</td>
-            <td class="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><button class="btn-lixo"><i class="bi bi-three-dots"></i></button></td>
+            <td class="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><button class="btn-3pontos
+btn-3pontos
+btn-3pontos"><i class="bi bi-three-dots"></i></button></td>
         `;
 
         tbody.appendChild(row);

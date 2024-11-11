@@ -182,7 +182,7 @@ body {
   overflow-y: auto;
 }
 
-.btn-lixo {
+.btn-3pontos {
   padding: 1px;
   width: 30px;
   height: 30px;
@@ -193,12 +193,12 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-.btn-lixo:hover {
+.btn-3pontos:hover {
   background-color: #dadada;
   color: black;
 
 }
-.btn-lixo:active {
+.btn-3pontos:active {
   color: black;
   background-color: #696969;
 }
@@ -213,6 +213,31 @@ body {
 .borda-bottom{
   border-bottom: 1px solid lightgray;
   border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  color: #555;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none; /* Remove a borda de foco preta */
+  appearance: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #f1f1f1;
+  border-color: #aaa;
+}
+
+select:focus {
+  border-color: #4189e6; /* Cor de foco suave */
+  box-shadow: 0 0 0 2px rgba(65, 137, 230, 0.2); /* Sombra suave para o foco */
+  outline: none; /* Remove qualquer contorno extra */
 }
 
 @media (max-width: 1139px) {
